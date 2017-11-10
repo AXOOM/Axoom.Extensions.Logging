@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axoom.Extensions.Logging", "Axoom.Extensions.Logging\Axoom.Extensions.Logging.csproj", "{6D94DE4B-8DFB-49FF-A55A-05CF4C6EFF0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axoom.Extensions.Logging.UnitTests", "Axoom.Extensions.Logging.UnitTests\Axoom.Extensions.Logging.UnitTests.csproj", "{DB2113C5-1888-4703-A5E7-B07242B454DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__docs", "__docs", "{4D77203A-1C65-4088-B5B2-052C50931958}"
+ProjectSection(SolutionItems) = preProject
+	..\readme.md = ..\readme.md
+	..\changelog.md = ..\changelog.md
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D94DE4B-8DFB-49FF-A55A-05CF4C6EFF0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D94DE4B-8DFB-49FF-A55A-05CF4C6EFF0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D94DE4B-8DFB-49FF-A55A-05CF4C6EFF0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D94DE4B-8DFB-49FF-A55A-05CF4C6EFF0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB2113C5-1888-4703-A5E7-B07242B454DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB2113C5-1888-4703-A5E7-B07242B454DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB2113C5-1888-4703-A5E7-B07242B454DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB2113C5-1888-4703-A5E7-B07242B454DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

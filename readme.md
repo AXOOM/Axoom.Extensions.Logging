@@ -1,5 +1,8 @@
 Axoom.Extensions.Logging
 ======
+[![Build status](https://ci.appveyor.com/api/projects/status/346whlmln3awc426?svg=true)](https://ci.appveyor.com/project/AXOOM/axoom-extensions-logging)
+
+
 This library is meant to be used for logging purposes on the AXOOM Platform.
 
 Therefore it uses [NLog.Extensions.Logging](https://github.com/NLog/NLog.Extensions.Logging) as logprovider for `Microsoft.Extensions.Logging` and extends it with:

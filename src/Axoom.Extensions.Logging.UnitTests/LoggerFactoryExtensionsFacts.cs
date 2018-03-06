@@ -68,7 +68,7 @@ namespace Axoom.Extensions.Logging
 
             Type type;
             ConfigurationItemFactory.Default.LayoutRenderers.TryGetDefinition("sysloglevel", out type);
-            type.ShouldBeEquivalentTo(typeof(SysLogLevelLayoutRenderer));
+            type.Should().Be(typeof(SysLogLevelLayoutRenderer));
         }
         
         [Fact]
@@ -80,7 +80,7 @@ namespace Axoom.Extensions.Logging
 
             Type type;
             ConfigurationItemFactory.Default.LayoutRenderers.TryGetDefinition("unixtime", out type);
-            type.ShouldBeEquivalentTo(typeof(UnixTimeLayoutRenderer));
+            type.Should().Be(typeof(UnixTimeLayoutRenderer));
         }
     }
 }

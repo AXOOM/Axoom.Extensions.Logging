@@ -9,13 +9,13 @@ namespace Axoom.Extensions.Logging
         [Fact]
         public void ConvertingMicrosoftLogLevelToNlogLevelWorks()
         {
-            LogLevel.None.AsNlogLogLevel().ShouldBeEquivalentTo(NLog.LogLevel.Off);
-            LogLevel.Trace.AsNlogLogLevel().ShouldBeEquivalentTo(NLog.LogLevel.Trace);
-            LogLevel.Debug.AsNlogLogLevel().ShouldBeEquivalentTo(NLog.LogLevel.Debug);
-            LogLevel.Information.AsNlogLogLevel().ShouldBeEquivalentTo(NLog.LogLevel.Info);
-            LogLevel.Warning.AsNlogLogLevel().ShouldBeEquivalentTo(NLog.LogLevel.Warn);
-            LogLevel.Error.AsNlogLogLevel().ShouldBeEquivalentTo(NLog.LogLevel.Error);
-            LogLevel.Critical.AsNlogLogLevel().ShouldBeEquivalentTo(NLog.LogLevel.Fatal);
+            LogLevel.None.AsNlogLogLevel().Should().Be(NLog.LogLevel.Off);
+            LogLevel.Trace.AsNlogLogLevel().Should().Be(NLog.LogLevel.Trace);
+            LogLevel.Debug.AsNlogLogLevel().Should().Be(NLog.LogLevel.Debug);
+            LogLevel.Information.AsNlogLogLevel().Should().Be(NLog.LogLevel.Info);
+            LogLevel.Warning.AsNlogLogLevel().Should().Be(NLog.LogLevel.Warn);
+            LogLevel.Error.AsNlogLogLevel().Should().Be(NLog.LogLevel.Error);
+            LogLevel.Critical.AsNlogLogLevel().Should().Be(NLog.LogLevel.Fatal);
         }
     }
 }

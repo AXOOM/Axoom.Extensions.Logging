@@ -23,8 +23,8 @@ namespace Axoom.Extensions.Logging.LayoutRenderers
             };
 
             string output = _layoutRenderer.Render(logEventInfo);
-            
-            output.ShouldBeEquivalentTo(1504092255);
+
+            output.Should().Be("1504092255");
         }
     }
 }

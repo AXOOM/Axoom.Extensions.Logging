@@ -14,8 +14,8 @@ namespace Axoom.Extensions.Logging
             jsonLayout.Attributes.Add(new JsonAttribute("property", originalText));
 
             string attributeLayout = jsonLayout.GetAttributeLayout("property");
-            
-            attributeLayout.ShouldBeEquivalentTo(originalText);
+
+            attributeLayout.Should().Be(originalText);
         }
     }
 }

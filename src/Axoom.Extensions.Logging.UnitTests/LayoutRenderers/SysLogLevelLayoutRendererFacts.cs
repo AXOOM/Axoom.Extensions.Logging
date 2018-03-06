@@ -12,53 +12,53 @@ namespace Axoom.Extensions.Logging.LayoutRenderers
         {
             _layoutRenderer = new SysLogLevelLayoutRenderer();
         }
-        
+
         [Fact]
         public void TraceIsMappedToSyslogDebug()
         {
             string output = _layoutRenderer.Render(CreateLogEventInfo(LogLevel.Trace));
-            
-            output.ShouldBeEquivalentTo(SysLogLevelLayoutRenderer.SYSLOG_DEBUG);
+
+            output.Should().Be(SysLogLevelLayoutRenderer.SYSLOG_DEBUG.ToString());
         }
-        
+
         [Fact]
         public void DebugIsMappedToSyslogDebug()
         {
             string output = _layoutRenderer.Render(CreateLogEventInfo(LogLevel.Debug));
-            
-            output.ShouldBeEquivalentTo("7");
+
+            output.Should().Be("7");
         }
-        
+
         [Fact]
         public void InfoIsMappedToSyslogInformational()
         {
             string output = _layoutRenderer.Render(CreateLogEventInfo(LogLevel.Info));
-            
-            output.ShouldBeEquivalentTo(SysLogLevelLayoutRenderer.SYSLOG_INFORMATIONAL);
+
+            output.Should().Be(SysLogLevelLayoutRenderer.SYSLOG_INFORMATIONAL.ToString());
         }
-        
+
         [Fact]
         public void WarnIsMappedToSyslogWarning()
         {
             string output = _layoutRenderer.Render(CreateLogEventInfo(LogLevel.Warn));
-            
-            output.ShouldBeEquivalentTo(SysLogLevelLayoutRenderer.SYSLOG_WARNING);
+
+            output.Should().Be(SysLogLevelLayoutRenderer.SYSLOG_WARNING.ToString());
         }
-        
+
         [Fact]
         public void ErrorIsMappedToSyslogError()
         {
             string output = _layoutRenderer.Render(CreateLogEventInfo(LogLevel.Error));
-            
-            output.ShouldBeEquivalentTo(SysLogLevelLayoutRenderer.SYSLOG_ERROR);
+
+            output.Should().Be(SysLogLevelLayoutRenderer.SYSLOG_ERROR.ToString());
         }
-        
+
         [Fact]
         public void FatalIsMappedToSyslogCritical()
         {
             string output = _layoutRenderer.Render(CreateLogEventInfo(LogLevel.Fatal));
-            
-            output.ShouldBeEquivalentTo(SysLogLevelLayoutRenderer.SYSLOG_CRITICAL);
+
+            output.Should().Be(SysLogLevelLayoutRenderer.SYSLOG_CRITICAL.ToString());
         }
 
         private static LogEventInfo CreateLogEventInfo(LogLevel logLevel) => new LogEventInfo(logLevel, "ALogger", "A message");

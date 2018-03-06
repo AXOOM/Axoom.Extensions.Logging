@@ -43,7 +43,7 @@ namespace Axoom.Extensions.Logging.Layouts
             string output = _layout.Render(_logEventInfo);
 
             JProperty property = GetProperty(output, "version");
-            property.Value.Value<string>().ShouldBeEquivalentTo("1.1");
+            property.Value.Value<string>().Should().Be("1.1");
         }
 
         [Fact]
